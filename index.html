@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <title>Word Guess Game</title>
+</head>
+
+<body>
+    <!-- <div class="parent-container"> -->
+        <h1>Kindly select a letter</h1>
+<h2>I am thinking of a word in the following category <br>can you guess it? </h2>
+        <!-- Attempts, Category, and Answer -->
+        <div class="top-container">
+            <div class="row">
+                Remaining Guesses
+                <div class="box"></div>
+                <div class="box"> </div>
+                <div class="box"></div>
+                <div class="box"> </div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <div class="row">
+                Category:
+                <div id="category"></div>
+            </div>
+
+            <div class="row">
+                <div id="letters"></div>
+            </div>
+        </div>
+
+        <!-- Guesses & Input -->
+        <div class="bottom-container">
+            <div class="guess-container">
+                <div class="row"><b>Guessed letters:</b></div>
+                <div class="row">
+                    <div id="guessed-letters">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="text" maxlength="1" id="txt-guess" placeholder="Guess a letter" />
+                <input id="btn-guess" name="guess" type="submit" value="Let's see" onClick="submitGuess()">
+            </div>
+        </div>
+
+        &nbsp;
+
+        <div class="row">
+            <div>
+                <img id="wrong" class="wrrong" style="display:none;" />
+            </div>
+            <div id="info">Letter has already been guessed</div>
+            <div id="error">Please enter a valid letter</div>
+            <div id="win">Congratulations! You won the game!</div>
+            <div id="lose">Sorry, game over! Please try again</div>
+            <input id="btn-new" type="submit" value="Start new game" onClick="startNewGame()" />
+        </div>
+    <!-- </div> -->
+    <audio autoplay loop>
+            <source src="assets/audio/gameTrack.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+</body>
+<script src="assets/javascript/game.js"></script>
+
+</html>

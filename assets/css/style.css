@@ -1,0 +1,138 @@
+* {
+    font-family: 'Abel', sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    background: linear-gradient(270deg, purple, #ffc903, #ff644e, #5aff4e, #4e84ff, #f208ee);
+    background-size: 1000% 1000%;
+    animation: AnimationName 30s ease infinite;
+    color: white;
+}
+
+.parent-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-container {
+    margin-top: 30px;
+}
+
+.bottom-container {
+margin-top: 30px;
+}
+
+.row {
+    padding: 10px;
+}
+
+/* I keep getting this egg shape! */
+.box {
+    width: 80px;
+    height: 50px;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 50%;
+    display: inline;
+    margin: 5px;
+    padding-left: 15px;
+    background: white;
+}
+.whiteBalls {
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+#category {
+    display: inline;
+}
+.letter {
+    display: inline-block;
+    list-style: none;
+    width: 15px;
+    margin: 0 2%;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: transparent;
+}
+
+.letter::-moz-selection {
+    background-color: Transparent;
+    color: Transparent;
+}
+.letter::selection {
+    background-color: Transparent;
+    color: Transparent;
+}
+.correct-letter {
+    background-color: rgba (73, 180, 103, .1);
+    transition: all 1s ease;
+    color: white;
+}
+
+.guess {
+    display: inline-block;
+    width: 15px;
+    margin: 0 5px;
+    text-align: center;
+}
+.correct-guess {
+    color: white;
+    font-weight: bold;
+}
+.incorrect-guess {
+    color: #f00;
+    font-weight: bold;
+}
+#info,
+#error {
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}
+#info {
+    color: #f90
+}
+#error {
+    color: #f00;
+}
+#win,
+#lose,
+#btn-new {
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    display: none;
+}
+#win {
+    color: black;
+}
+
+#lose {
+    color: #990016;
+}
+
+.wrrong {
+    display: none;
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
