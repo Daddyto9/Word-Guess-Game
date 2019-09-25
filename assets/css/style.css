@@ -9,7 +9,7 @@ body {
     font-family: 'Abel', sans-serif;
     background: linear-gradient(270deg, purple, #ffc903, #ff644e, #5aff4e, #4e84ff, #f208ee);
     background-size: 1000% 1000%;
-    animation: AnimationName 30s ease infinite;
+    animation: AnimationName 120s ease infinite;
     color: white;
 }
 
